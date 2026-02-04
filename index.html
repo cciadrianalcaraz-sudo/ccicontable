@@ -181,24 +181,45 @@
             </div>
           </div>
         </div>
-        <form class="form" action="https://formspree.io/f/xeeljjag" method="POST">
-          <label>
-            Nombre o Razon Social
-            <input type="text" placeholder="Tu nombre y empresa" />
-          </label>
-          <label>
-            Correo
-            <input type="email" placeholder="tucorreo@empresa.com" />
-          </label>
-          <label>
-            ¿Qué necesitas?
-            <textarea rows="4" placeholder="Cuéntanos tu reto actual"></textarea>
-          </label>
-          <button class="btn primary" type="button">Solicitar contacto</button>
-          <p class="form-note">
-            Respondemos en menos de 24 horas hábiles.
-          </p>
-        </form>
+      <form class="form" action="https://formspree.io/f/xeeljjag" method="POST">
+  <label>
+    Nombre o Razón Social
+    <input 
+      type="text" 
+      name="nombre" 
+      placeholder="Tu nombre y empresa" 
+      required
+    />
+  </label>
+
+  <label>
+    Correo
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="tucorreo@empresa.com" 
+      required
+    />
+  </label>
+
+  <label>
+    ¿Qué necesitas?
+    <textarea 
+      name="mensaje" 
+      rows="4" 
+      placeholder="Cuéntanos tu reto actual"
+      required
+    ></textarea>
+  </label>
+
+  <button class="btn primary" type="submit">
+    Solicitar contacto
+  </button>
+
+  <p class="form-note">
+    Respondemos en menos de 24 horas hábiles.
+  </p>
+</form>
       </section>
     </main>
 
@@ -214,3 +235,4 @@
   </body>
 
 </html>
+
